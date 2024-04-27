@@ -24,6 +24,7 @@ a {
   top: 0;
   left: 0;
   background-color: rgb(16, 17, 44);
+  padding-top: 20px
 }
 
 .nav-container {
@@ -51,6 +52,46 @@ a {
   border: solid 1px rgb(49, 67, 94);
   border-radius: 20px
 }
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+.main-menu a {
+  font-size: 1.5em;
+	padding: 10px 10px;
+	color: #fff;
+	text-align: center;
+}
+
+@media(max-width: 1000px) {
+  .nav-container{
+    width: 80vw;
+  }
+  
+  .block-container {
+    width: 80vw;
+  }
+}
+
+@media(max-width: 500px) {
+  .nav-container{
+    width: 100vw;
+  }
+  
+  .block-container {
+    width: 100vw;
+  }
+
+  .main-menu a {
+    font-size: 1em;
+  }
+}
+
 
 .text{
   width: 90vw;
@@ -87,20 +128,6 @@ a {
 .svg:hover {
   fill: rgb(0, 124, 124);
   background-color:#fff;
-}
-
-.main-menu {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
-.main-menu a {
-  font-size: 1.5em;
-	padding: 10px 10px;
-	color: #fff;
-	text-align: center;
 }
 
 .main-menu a:hover {
